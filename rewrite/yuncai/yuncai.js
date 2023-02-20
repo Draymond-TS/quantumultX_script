@@ -1,6 +1,9 @@
+#!name=彩云天气SVIP
+#!desc=彩云天气会员解锁
+#!homepage=https://github.com/deezertidal
+#!author= ddgksf2013
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/caiyun.png
 
-hostname = biz.caiyunapp.com
-
-
-#彩云天气
-^https:\//biz.caiyunapp.com\/v2\/user\?app_name=weather url script-response-body https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/caiyun.js
+hostname=*.caiyunapp.*,*cyapi*
+^http[s]?:\/\/biz\.(caiyunapp|cyapi)\.(com|cn)\/v2\/user.*$ url script-response-body https://raw.githubusercontent.com/WeiRen0/Scripts/main/cytq.js
+^https:\/\/ad\.caiyunapp\.com\/ url reject
